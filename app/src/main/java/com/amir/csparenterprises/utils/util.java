@@ -1,4 +1,4 @@
-package com.codeinger.csparenterprises.utils;
+package com.amir.csparenterprises.utils;
 
 import android.content.Context;
 import android.content.res.Resources;

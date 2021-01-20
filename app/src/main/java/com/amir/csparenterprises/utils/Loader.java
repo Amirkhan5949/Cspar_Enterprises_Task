@@ -1,9 +1,9 @@
-package com.codeinger.csparenterprises.utils;
+package com.amir.csparenterprises.utils;
 
 import android.content.Context;
 import android.view.Gravity;
 
-import com.codeinger.csparenterprises.R;
+import com.amir.csparenterprises.R;
 import com.orhanobut.dialogplus.DialogPlus;
 import com.orhanobut.dialogplus.ViewHolder;
 

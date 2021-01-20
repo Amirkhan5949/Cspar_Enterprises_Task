@@ -1,4 +1,4 @@
-package com.codeinger.csparenterprises.ui.adapter;
+package com.amir.csparenterprises.ui.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,8 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.codeinger.csparenterprises.R;
-import com.codeinger.csparenterprises.model.SuccessItem;
+import com.amir.csparenterprises.R;
+import com.amir.csparenterprises.model.SuccessItem;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

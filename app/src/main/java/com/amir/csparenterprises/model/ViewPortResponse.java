@@ -1,4 +1,4 @@
-package com.codeinger.csparenterprises.model;
+package com.amir.csparenterprises.model;
 
 import java.util.List;
 import com.google.gson.annotations.SerializedName;
