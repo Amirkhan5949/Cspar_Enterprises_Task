@@ -1,5 +1,6 @@
 package com.amir.csparenterprises.ui.adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.amir.csparenterprises.R;
 import com.amir.csparenterprises.model.SuccessItem;
+import com.amir.csparenterprises.ui.activity.UserProfileActivity;
+import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -39,7 +42,13 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
         if (successItem != null) {
             holder.email.setText(successItem.getName());
             holder.address.setText(successItem.getAddress());
-            Picasso.get().load(successItem.getImage()).resize(100, 100).centerCrop().into(holder.circleImageView);
+            Picasso.get().load(successItem.getImage()).placeholder(R.drawable.placeholder).resize(100, 100).centerCrop().into(holder.circleImageView);
+
+            holder.layout.setOnClickListener(view -> {
+                Intent intent = new Intent(holder.layout.getContext(), UserProfileActivity.class);
+                intent.putExtra("user",new Gson().toJson(successItem));
+                holder.layout.getContext().startActivity(intent);
+            });
         }
     }
 
